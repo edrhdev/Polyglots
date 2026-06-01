@@ -5,6 +5,7 @@ on:
     branches: [ main ]
     paths:
       - '.github/workflows/deploy-web-app.yml'
+      - 'docker.prod/docker-compose.web.app.yml'
       - 'src/Presentation/Polyglots.Presentation.WebApp/**'
       - 'src/Shared/Polyglots.Shared/**'
 
