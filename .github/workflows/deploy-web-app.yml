@@ -54,5 +54,5 @@ jobs:
           script: |
             cd ~/repos/Polyglots
             git pull origin main
-            docker compose -f docker.prod/docker-compose.web.app.yml pull polyglots-web-app
-            docker compose -f docker.prod/docker-compose.web.app.yml up -d
+            docker-compose -f docker.prod/docker-compose.web.app.yml pull polyglots-web-app
+            docker-compose -f docker.prod/docker-compose.web.app.yml up -d
