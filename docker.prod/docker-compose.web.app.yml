@@ -1,6 +1,6 @@
 services:
   polyglots-web-app:
-    image: ghcr.io/edrhdev/polyglots-web:latest
+    image: ghcr.io/edrhdev/polyglots-web-app:latest
     container_name: polyglots-web-app
     restart: unless-stopped
     networks:
