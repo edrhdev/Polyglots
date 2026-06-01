@@ -1,0 +1,6 @@
+@Polyglots.Presentation.WebAPI_HostAddress = http://localhost:5051
+
+GET {{Polyglots.Presentation.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

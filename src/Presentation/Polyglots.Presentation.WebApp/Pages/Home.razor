@@ -1,0 +1,12 @@
+﻿@page "/"
+
+<RadzenButton Click="@ButtonClicked" Text="Hi">@value</RadzenButton>
+
+@code {
+    int value = 0;
+    
+    void ButtonClicked()
+    {
+        value++;
+    }
+}

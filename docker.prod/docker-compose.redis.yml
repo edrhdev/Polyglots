@@ -1,0 +1,13 @@
+services:
+  polyglots-cache:
+    image: redis:7-alpine
+    container_name: polyglots-redis
+    ports:
+      - "${REDIS_PORT}:6379"
+    networks:
+      - polyglots_network
+
+networks:
+  polyglots_network:
+    name: polyglots_shared_network
+    external: true

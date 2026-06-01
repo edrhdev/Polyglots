@@ -1,0 +1,12 @@
+services:
+  polyglots-web-app:
+    image: ghcr.io/edrhdev/polyglots-web:latest
+    container_name: polyglots-web-app
+    restart: unless-stopped
+    networks:
+      - polyglots_network
+
+networks:
+  polyglots_network:
+    name: polyglots_shared_network
+    external: true

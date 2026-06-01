@@ -1,0 +1,22 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.3.5">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <UserSecretsId>1e829cc5-6493-459d-a06e-9759d188d29f</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Presentation\Polyglots.Presentation.WebAPI\Polyglots.Presentation.WebAPI.csproj" />
+      <ProjectReference Include="..\..\Presentation\Polyglots.Presentation.WebApp\Polyglots.Presentation.WebApp.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="13.3.5" />
+      <PackageReference Include="Aspire.Hosting.RabbitMQ" Version="13.3.5" />
+      <PackageReference Include="Aspire.Hosting.Redis" Version="13.3.5" />
+    </ItemGroup>
+
+</Project>

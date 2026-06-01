@@ -1,0 +1,13 @@
+﻿services:
+  nginx:
+    image: nginx:alpine
+    container_name: polyglots-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ../nginx.gateway.conf:/etc/nginx/nginx.conf:ro
+
+networks:
+  polyglots_network:
+    name: polyglots_shared_network
+    external: true

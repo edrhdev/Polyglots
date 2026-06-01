@@ -1,0 +1,11 @@
+﻿global:
+  scrape_interval: 10s
+
+scrape_configs:
+  - job_name: 'polyglots-apis'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets:
+          - 'polyglots-api-local-1:8080'
+          - 'polyglots-api-local-2:8080'
+          - 'polyglots-api-local-3:8080'
