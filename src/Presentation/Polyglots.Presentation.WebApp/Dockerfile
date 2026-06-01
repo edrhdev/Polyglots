@@ -15,6 +15,7 @@ WORKDIR "/build_dir/src/Presentation/Polyglots.Presentation.WebApp"
 
 # 3. Compilar la aplicación en modo Release para web estática
 FROM build AS publish
+RUN dotnet workload install wasm-tools
 RUN dotnet publish "./Polyglots.Presentation.WebApp.csproj" -c Release --property:PublishDir=/app/publish
 
 # 4. Fase final: Usar Nginx para servir el contenido estático
